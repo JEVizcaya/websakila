@@ -16,7 +16,7 @@ main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 100%;
+    height: 80%;
 }
 aside{
     width: 20%;
@@ -27,6 +27,12 @@ section{
     width: 75%;
     padding: 10px;
     border-radius: 5px;
+    overflow: hidden;
+    scroll-behavior: auto;
+    height: 100%;
+    overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede */
+    /* Si prefieres ocultar el scroll horizontal, puedes agregar: */
+    overflow-x: hidden;
 }
 #peliculas{
     cursor: pointer;
