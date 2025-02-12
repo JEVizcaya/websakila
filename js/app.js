@@ -1,4 +1,6 @@
 document.getElementById("peliculas").addEventListener("click", function(){
+    document.getElementById("contenido").hidden=false;
+    document.getElementById("form_new_actor").hidden=true;
     fetch("http://192.168.100.166/apisakila/peliculas/all")
     .then(response => response.json())
     .then(data => {
@@ -14,3 +16,8 @@ document.getElementById("peliculas").addEventListener("click", function(){
         document.getElementById("contenido").innerHTML = output;
     });
 });
+
+document.getElementById("new_actor").addEventListener("click", function(){
+    document.getElementById("contenido").hidden=true;
+    document.getElementById("form_new_actor").hidden=false;
+})
