@@ -34,6 +34,6 @@ section{
     /* Si prefieres ocultar el scroll horizontal, puedes agregar: */
     overflow-x: hidden;
 }
-#peliculas{
+aside li{
     cursor: pointer;
 }
